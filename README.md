@@ -108,3 +108,104 @@ CampusNavigatingSystem/
 │   ├── CampusNavigatingSystemApp.java
 │   └── Test.java
 └── README.md
+
+----------------------------------------------------------
+3. Compile and Run
+----------------------------------------------------------
+
+✅ Using Terminal
+
+Compile:
+--------
+
+# Windows
+javac -cp ".;lib/*" src/CampusNavigatingSystemApp.java src/Test.java
+
+# macOS/Linux
+javac -cp ".:lib/*" src/CampusNavigatingSystemApp.java src/Test.java
+
+Run:
+----
+
+# Windows
+java -cp ".;lib/*" CampusNavigatingSystemApp
+
+# macOS/Linux
+java -cp ".:lib/*" CampusNavigatingSystemApp
+
+
+✅ Using an IDE
+--------------
+
+- Import the project into your IDE (IntelliJ, Eclipse, NetBeans, etc.).
+- Add the JDBC .jar file to your build path or module dependencies.
+- Run CampusNavigatingSystemApp.java directly.
+
+
+----------------------------------------------------------
+🧪 Test Database Connection
+----------------------------------------------------------
+
+Use Test.java to verify your MySQL connection.
+
+Compile:
+--------
+
+# Windows
+javac -cp ".;lib/*" src/Test.java
+
+# macOS/Linux
+javac -cp ".:lib/*" src/Test.java
+
+Run:
+----
+
+# Windows
+java -cp ".;lib/*" Test
+
+# macOS/Linux
+java -cp ".:lib/*" Test
+
+Expected Output:
+----------------
+Connected to the database successfully.
+
+
+----------------------------------------------------------
+💡 Usage
+----------------------------------------------------------
+
+- Select a table from the dropdown (e.g., Buildings, Events)
+- Click "Load Table" to display corresponding input fields
+- Fill in the data and choose one of the following operations:
+
+  Add:     Insert new data
+  Update:  Modify data using the primary key
+  Delete:  Remove data using the primary key
+  View:    Display a record using the primary key
+
+🔑 Note:
+Primary key field must always be filled for Update, Delete, and View.
+
+
+----------------------------------------------------------
+📁 Folder Structure
+----------------------------------------------------------
+
+CampusNavigatingSystem/
+├── lib/
+│   └── mysql-connector-java-x.x.x.jar
+├── src/
+│   ├── CampusNavigatingSystemApp.java
+│   └── Test.java
+└── README.txt
+
+
+----------------------------------------------------------
+📌 Notes
+----------------------------------------------------------
+
+- Ensure your MySQL server is running.
+- Database schema and table structures must match the expected layout.
+- JDBC .jar must be correctly linked to the project classpath.
+
